@@ -1,5 +1,7 @@
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/Djockovic.dart';
+// import 'package:flutter_application_1/pages/Djockovic.dart';
 import 'package:flutter_application_1/pages/image.dart';
 
 class LoginPage extends StatefulWidget {
@@ -59,10 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => DjokerNole()));
+                            Navigator.pushNamed(context, "/djoko");
                           },
                           child: const Text("Login In"),
                         ),
